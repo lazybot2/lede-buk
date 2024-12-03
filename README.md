@@ -37,6 +37,8 @@ Op固件技术研究群 ,号码 891659613 ，加群链接：[点击加入](https
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
+   git config --global http.version HTTP/1.1
+   git config --global http.postBuffer 524288000
    git clone https://github.com/coolsnowwolf/lede
    cd lede
    ./scripts/feeds update -a
