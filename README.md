@@ -51,7 +51,9 @@ I18N: [English](README_EN.md) | [简体中文](README.md) | [日本語](README_J
    ./scripts/feeds update -a
    ./scripts/feeds install -a
    make menuconfig
-   ```
+   
+   make download -j12
+   make -j12
 
 4. 下载 dl 库，编译固件
 （-j 后面是线程数，第一次编译推荐用单线程）
